@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Davids Site</title>
+    <h1 align='center'>Davids Website</h1>
+
+    <link rel="stylesheet" href="button.css" >
+    <link rel="stylesheet" href="h1.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="button.js"></script>
+    <script src="weatherButBetter.js"></script>
+
+</head>
+
+<body>
+    <body style="background-color:powderblue;"></body>
+    <div align="center">
+
+        <button id="home" onclick="goHome()">
+            Home Stuff
+        </button>
+
+        <button id="work" onclick = "goWork()">
+            Work Stuff
+        </button>
+        
+    </div>
+
+    
+     <div align="center">
+        <a id="temp">---</a>
+
+        <button onclick="getWeather()">Get Current Weather!</button>           
+     </div>
+
+    <h6>Powered by darksky https://darksky.net/poweredby/</h6>
+   
+
+</body>
+</html>
