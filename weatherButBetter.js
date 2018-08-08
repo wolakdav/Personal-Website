@@ -17,7 +17,7 @@ function weatherRequest(lat, lon) {
 
       const request = new XMLHttpRequest();
     
-      const url = 'http://api.openweathermap.org/data/2.5/weather?lat='+Math.floor(lat)+'&lon='+Math.floor(lon)+'&APPID=bcd3af470b4f17ad93de4072f6e47d9f'//This works! Fuck security
+      const url = 'https://api.openweathermap.org/data/2.5/weather?lat='+Math.floor(lat)+'&lon='+Math.floor(lon)+'&APPID=bcd3af470b4f17ad93de4072f6e47d9f'//This works! Fuck security
       //`https://api.darksky.net/forecast/695544473a2dd8009951c9bddec71282/${lat},${long}` + `?format=jsonp&callback=displayWeather`; Grrrrr CORS
     
       request.open("GET",url);
