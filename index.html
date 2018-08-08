@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="button.css" >
     <link rel="stylesheet" href="h1.css">
+    <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
+   
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
@@ -35,12 +37,19 @@
 
     
      <div align="center">
-        <a id="temp">---</a>
+       
 
-        <button onclick="getWeather()">Get Current Weather!</button>           
+        <button onclick="getWeather()">Refresh Weather</button>           
+     </div>
+     <div align="center">
+         <br>
+
+        <a id="temp" align="center">---</a>
+        <i id="weatherIcon" class="owf owf-803"></i>
+        <br>
+        <h6 id="description"></a>
      </div>
 
-    <h6>Powered by darksky https://darksky.net/poweredby/</h6>
    
 
 </body>

@@ -30,7 +30,7 @@ function weatherRequest(lat, lon) {
           console.log("Ran request")
           var myArr = JSON.parse(this.responseText);
           console.log(myArr);
-          myFunction(myArr)
+          processWeather(myArr)
         }
       }
     /*
@@ -45,16 +45,42 @@ function weatherRequest(lat, lon) {
     */
 }
 
-function myFunction(arr) {
+function processWeather(arr) {
+
   var kelvin = arr["main"]["temp"]
-  document.getElementById("temp").innerHTML = kelvinToFar(kelvin);
+  var condition = arr["weather"][0]["description"];
+  var icon = arr['weather'][0]['id'];
+  var country = arr['sys']["country"];
+
+  if(country == 'US')
+  {
+    document.getElementById("temp").innerHTML = kelvinToFar(kelvin)+"°";
+  }else{
+    document.getElementById("temp").innerHTML = kelvinToCel(kelvin)+"°";
+  }
   
-  
+  document.getElementById("description").innerHTML = "Current condition: "+condition+"s";
+  document.getElementById("weatherIcon").className = "owf owf-"+icon+ " owf-3x";
+  console.log(condition);
+  if(condition == "clear sky")
+  {
+    document.getElementById("weatherIcon").style.color="yellow";
+  }
+
+
+
 }
 
 function kelvinToFar(kelvin)
 { 
  return Math.floor(((9/5) *(kelvin - 273) +32));
 }
-
-
+function kelvinToCel(kelvin)
+{
+  return Math.floor(kelvin-273.15);
+}
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function(txt){
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
