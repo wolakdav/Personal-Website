@@ -10,7 +10,7 @@
     <h1 align='center'>Davids Website</h1>
 
     <link rel="stylesheet" href="button.css" >
-    <link rel="stylesheet" href="h1.css">
+    <link rel="stylesheet" href="mainPage.css">
     <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
    
 
@@ -18,15 +18,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="button.js"></script>
     <script src="weatherButBetter.js"></script>
+    <script src="mainPage.js"></script>
 
 </head>
 
-<body>
-    <body style="background-color:powderblue;"></body>
-    <div align="center">
+<body onload="getWeather()">
+    <body style="background-color: 66ccff;"></body>
+   <!-- <div align="center">
 
         <button id="home" onclick="goHome()">
-            Home Stuff
+            Home Stuffs
         </button>
 
         <button id="work" onclick = "goWork()">
@@ -34,7 +35,7 @@
         </button>
         
     </div>
-
+-->
     
      <div align="center">
        
@@ -50,7 +51,17 @@
         <h6 id="description"></a>
      </div>
 
-   
+<a href = "work.html">
+   <div id="Leftside" class="split left"><!--Left Plane-->
+       <p align="center">Work</p>
+   </div>
+</a>
+<a href = "home.html">
+   <div id="Rightside" class="split right"><!--Left Plane-->
+       <p align="center">Home</p>
+   </div>
+</a>
+
 
 </body>
 </html>
