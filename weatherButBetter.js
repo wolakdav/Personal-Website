@@ -59,7 +59,7 @@ function processWeather(arr) {
     document.getElementById("temp").innerHTML = kelvinToCel(kelvin)+"°";
   }
   
-  document.getElementById("description").innerHTML = "Current condition: "+condition+"s";
+  document.getElementById("description").innerHTML = "Current condition: "+condition;
   document.getElementById("weatherIcon").className = "owf owf-"+icon+ " owf-3x";
   console.log(condition);
   if(condition == "clear sky")
