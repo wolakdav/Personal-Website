@@ -59,26 +59,73 @@ a {
 
 #Leftside
 {
-    height: 97%;
+    height: 100%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
-    
+    border-radius: 0px 25px 25px 0px;
 }
 
 #Leftside:hover{
-    background-color: #2196F3;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 50px 50px 50px 50px;
+    background-color: #333399;/*#2196F3;*/
+    box-shadow: 10px 10px 5px #4d4d4d;
+    
 }
 
 #Rightside
 {
+    height: 100%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
+    border-radius: 25px 0px 0px 25px;
 }
 
 #Rightside:hover{
-    background-color: red;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 50px 50px 50px 50px;
+    background-color: #336600;
+    box-shadow: 10px 10px 5px #4d4d4d;
+    
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#weatherButton{
+
+    font-family: "Roboto";
+    font-size: 24px;
+    padding: 1em 2em;
+    margin: 3px;
+    border: 0;
+    outline: 0;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    border-radius: 0.15em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+    overflow: hidden;
+    position: relative;
+
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+
+}
+
+#weatherButton:active{
+
+ 
+    background-color: #2196F3;
+
 }

@@ -1,7 +1,7 @@
 
 
-function showLeft(){
-    document.getElementById("leftSplit").style.background = "red";
+function blurText(){
+    document.getElementById("weather").innerHTML.style.blurText;
    
 }
 

@@ -1,5 +1,6 @@
 var getWeather = function() {
     if(navigator.geolocation){
+      
       navigator.geolocation.getCurrentPosition(function(position){
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
@@ -18,7 +19,7 @@ function weatherRequest(lat, lon) {
       const request = new XMLHttpRequest();
     
       const url = 'https://api.openweathermap.org/data/2.5/weather?lat='+Math.floor(lat)+'&lon='+Math.floor(lon)+'&APPID=bcd3af470b4f17ad93de4072f6e47d9f'//This works! Fuck security
-      //`https://api.darksky.net/forecast/695544473a2dd8009951c9bddec71282/${lat},${long}` + `?format=jsonp&callback=displayWeather`; Grrrrr CORS
+    
     
       request.open("GET",url);
       request.send();
@@ -33,16 +34,7 @@ function weatherRequest(lat, lon) {
           processWeather(myArr)
         }
       }
-    /*
-    fetch(url)
-    .then((resp) => resp.json())//CORS is dumb
-    .then(function(data) {
-        document.getElementById("temp").innerHTML = currently.temperature;
-      })
-    .catch(function(error) {
-        document.getElementById("temp").innerHTML = "CORS is dumb"
-    });   
-    */
+
 }
 
 function processWeather(arr) {
@@ -67,7 +59,7 @@ function processWeather(arr) {
     document.getElementById("weatherIcon").style.color="yellow";
   }
 
-
+ 
 
 }
 
