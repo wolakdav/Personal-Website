@@ -24,7 +24,7 @@ a {
  }
 
  .split{
-    height: 100%;
+    height: 50%;
     width: 20%;
     position: fixed;
     z-index: 1;
@@ -59,7 +59,7 @@ a {
 
 #Leftside
 {
-    height: 100%;
+    height: 50%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     border-radius: 0px 25px 25px 0px;
@@ -73,7 +73,7 @@ a {
 
 #Rightside
 {
-    height: 100%;
+    height: 50%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     border-radius: 25px 0px 0px 25px;
@@ -81,7 +81,9 @@ a {
 
 #Rightside:hover{
     background-color: #336600;
-    box-shadow: 10px 10px 5px #4d4d4d;
+ -moz-box-shadow: 0 0 25px #4d4d4d;
+-webkit-box-shadow: 0 0 25px #4d4d4d;
+box-shadow: -10px 10px 5px #4d4d4d;
     
 }
 
@@ -128,4 +130,31 @@ a {
  
     background-color: #2196F3;
 
+}
+
+.newsCard{
+    height: 50%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    bottom: 1px;
+    overflow-x:hidden;
+    padding-top:20px;
+   
+}
+#newsCard
+{
+    height: 50%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    left:0;
+    color: white;
+}
+
+#newsCard:hover
+{
+background-color: white;
+border-radius: 0px 25px 25px 0px;
+box-shadow: 10px 10px 5px #4d4d4d;
+color: black;
 }
