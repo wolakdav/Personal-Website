@@ -59,9 +59,10 @@ a {
 
 #Leftside
 {
-    height: 50%;
+    height: 100%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
     border-radius: 0px 25px 25px 0px;
 }
 
@@ -73,9 +74,10 @@ a {
 
 #Rightside
 {
-    height: 50%;
+    height: 100%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
     border-radius: 25px 0px 0px 25px;
 }
 
@@ -122,6 +124,7 @@ box-shadow: -10px 10px 5px #4d4d4d;
 
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
 
 }
 
@@ -147,6 +150,7 @@ box-shadow: -10px 10px 5px #4d4d4d;
     height: 50%;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
     left:0;
     color: white;
 }
@@ -156,5 +160,6 @@ box-shadow: -10px 10px 5px #4d4d4d;
 background-color: white;
 border-radius: 0px 25px 25px 0px;
 box-shadow: 10px 10px 5px #4d4d4d;
+transition: all .1s ease-in-out;
 color: black;
 }
