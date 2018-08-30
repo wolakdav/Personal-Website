@@ -1,7 +1,49 @@
+newsLink = new Array(3);
 
 
-function newsGetter()
+function tabChanger(evt, tab) {  //This will have to be changed
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabContent");
+  console.log(tabcontent.length)
+  for (i = 0; i < tabcontent.length; i++) {
+      
+      tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  var style;
+  if(tab === "masterNews")
+  {
+    style = "inline-flex";
+  }else{
+    style = "block";
+  }
+  document.getElementById(tab).style.display = style;
+  evt.currentTarget.className += " active";
+}
+
+
+function newsGetter(evt)
 {
+
+  tabcontent = document.getElementsByClassName("tabContent");
+  console.log(tabcontent.length)
+  for (i = 0; i < tabcontent.length; i++) {
+      
+      tabcontent[i].style.display = "none";
+  }
+
+  document.getElementById("masterNews").style.display = "inline-flex";
+
+
    const url = "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=b8afde80106c4d3aaf1a04be769d19d4"
 
     const request = new XMLHttpRequest();
@@ -29,21 +71,18 @@ function newsShow(news)
     photoLink = new Array(3);
     titles = new Array(3);
     descriptions = new Array(3);
+    
+
+
 
     for(var i =1;i<4;i++)
     {
        photoLink[i-1] = news["articles"][i]["urlToImage"];
        titles[i-1] = news["articles"][i]["title"]+"\n";
        descriptions[i-1] =  news["articles"][i]["description"]+"...";
+       newsLink[i-1] = news["articles"][i]["url"]
     }
-/*
- 
-    photoLink[1] = news["articles"][2]["urlToImage"];
-    photoLink[2] = news["articles"][3]["urlToImage"];
-  
-    ti
-       console.log(photoLink[0]===null)
-*/
+
        for(var i = 0;i<3;i++)
        {
          console.log(descriptions[i])
@@ -75,3 +114,19 @@ function newsShow(news)
       document.getElementById("photo2").src = photoLink[0];
      
 }
+
+function newsCenter()
+{
+  window.location.href = newsLink[2];
+}
+
+function newsLeft()
+{
+  window.location.href = newsLink[1];
+}
+
+function newsRight()
+{
+  window.location.href = newsLink[0];
+}
+
