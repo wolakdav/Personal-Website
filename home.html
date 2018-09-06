@@ -16,7 +16,7 @@
     <script src="home.js"></script>
 </head>
 
-<body onload="newsGetter()" style="background-color: #333">
+<body onload="newsGetter()" style="background-color: #333" >
 
    
 
@@ -50,29 +50,8 @@
             </div>
 
         </div>
-           
-            
 
-            
-    <div id="tab">
-        <button id="news" class="tablinks tabBasic" onclick="tabChanger(event , 'masterNews')">
-            News
-        </button>
-
-        <button id="Button2" class="tablinks tabBasic" onclick="tabChanger(event, 'spotify')">
-            Spotify
-        </button>
-
-        <button id="Button3" class="tablinks tabBasic" onclick="tabChanger(event, 'test3')">
-            Button 3
-        </button>
-    </div>
-
-    <div id="test1" class="tabContent " >
-       
-    </div>
-
-    <div id="spotify" style="display: table-row" class="tabContent" align="center" >
+    <div id="spotify" style="display: table-row" class="tabContent" align="center" display="none" >
         <div id="spotifyPlayer">
     
         <iframe src="https://open.spotify.com/embed/user/jqhmdqlualalwm14vdiqm79bz/playlist/6yyrbkeFnopOgbEFLFcAAi" width="auto" height="580px" frameborder="0" allowtransparency="false" allow="encrypted-media"></iframe>
@@ -89,10 +68,51 @@
 
     </div>
 
-    <div id="test3" class="tabContent" >
-     
+    <div id="bookmarks" class="tabContent" align="center" display="none">
+        <div class="gridMaster">
+
+           <div class="redditBox">
+           
+               
+               
+                   
+                            <a href="https://www.reddit.com/r/me_irl/" style="text-decoration:none">me_irl</a>
+                            <br>
+                            <a href="https://www.reddit.com/r/buildapcsales/" style="text-decoration:none">buildapcsales</a>
+                            <br>
+                            <a href="https://www.reddit.com/r/Portland/" style="text-decoration:none">Portland</a>
+                            <br>
+                            <a href="https://www.reddit.com/r/csMajors/" style="text-decoration:none">csMajors</a>
+                  
+                </div>
+           
+                <div class="youtubeBox" onclick="youtube()">
+                    <img src="youtubeLogo.png">   
+                   </div>
+           
+            <div class="RWBYbox" onclick="rwby()">
+
+
+            </div>
+            <div class="facebookBox" onclick="facebook()">
+
+            </div>
+        </div>
     </div>
 
+    <div id="tab">
+        <button id="news" class="tablinks tabBasic" onclick="tabChanger(event , 'masterNews')">
+            News
+        </button>
+
+        <button id="Button2" class="tablinks tabBasic" onclick="tabChanger(event, 'spotify')">
+            Spotify
+        </button>
+
+        <button id="Button3" class="tablinks tabBasic" onclick="tabChanger(event, 'bookmarks')">
+            Bookmarks
+        </button>
+    </div>
 
 </body>
 
