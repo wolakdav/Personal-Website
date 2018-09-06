@@ -26,6 +26,7 @@ function tabChanger(evt, tab) {  //This will have to be changed
   }else{
     style = "block";
   }
+  console.log(document.getElementById(tab));
   document.getElementById(tab).style.display = style;
   evt.currentTarget.className += " active";
 }
@@ -130,3 +131,16 @@ function newsRight()
   window.location.href = newsLink[0];
 }
 
+function youtube()
+{
+  window.location.href = "https://www.youtube.com";
+}
+function rwby()
+{
+  window.location.href = "http://rwby-rpg.rwbyfanon.com/";
+}
+
+function facebook()
+{
+  window.location.href = "https://www.facebook.com/";
+}
