@@ -5,21 +5,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Stuff</title>
-    <h1 align="center">Home Stuff</h1>
-    <link rel="stylesheet" href="button.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <script src="button.js"></script>
-
+    <title>Work Links</title>
+    <link rel="stylesheet" href="work.css">
+    <script src="work.js"></script>
 </head>
 
-<body>
-    <body style="background-color:powderblue;"></body>
-    <div align="center">
+<body onload="button(this.id)" style="background-color:#333;">
 
-        <p>Work section</p>
+   <div class="header">
+       PSU Quick Links
+   </div>
+
+  
+
+
+   <div class="menu">
+       <ul>
+            <li id="confluence" onclick="button(this.id)">Confluence</li>
+            <li id="banner" onclick="button(this.id)">Banner</li>
+            <li id="banweb" onclick="button(this.id)">Banweb</li>
+            <li id="d2l" onclick="button(this.id)">D2L</li>
+            <li id="qt" onclick="button(this.id)">Quick Ticket</li>
+            <li id="bench" onclick="button(this.id)">DST Bench</li>
+            <li id="rt" onclick="button(this.id)">Tickets</li>
+            <li id="calender" onclick="button(this.id)"> Calender</li>
+            
+       </ul>
+   </div>
+
+   <div class="content">
+       <div class="tab">
+        <h1 id="contentTitle">
+            Content Title
+        </h1>
+        
+
+        <a id ="contentLinks">
+            Quicklinks go here
+        </a>
     </div>
+       <div id="confluenceTab" class="confluence tab">
+            <h1>Confluence</h1>
 
+            <a href="https://portlandstate.atlassian.net/wiki/spaces/USSKB/overview">Search</a> <br>
+            <a href="https://portlandstate.atlassian.net/wiki/spaces/USSKB/pages/45162217/Operator+Phone+Directory?src=search">Directory</a><br>
+            <a href="https://portlandstate.atlassian.net/wiki/spaces/USSKB/pages/36208733/DST+Servers"> Servers</a><br>
+            <a href="https://portlandstate.atlassian.net/wiki/spaces/USSKB/pages/43247317/Thin+Imaging+macOS+Computers">Thin Imaging</a><br>
+            <a href="https://docs.google.com/document/d/1UMDEL4i-6RaN3pJp8VVLMS75515oHLBYOzO15EsAKes/edit#heading=h.81vyka1qnuc1">Mac Reimaing</a><br>
+            <a href="https://portlandstate.atlassian.net/wiki/spaces/USSKB/pages/44047291/PSU+Supportable+Hardware+List+-+Imaging+Drivers+and+FDE+Support">Hardware Imaging</a><br>
+            <a href="https://portlandstate.atlassian.net/wiki/spaces/USSKB/pages/268075116/Bitlocker+-+essential+configuration+settings">Bitlocker General</a><br>
+            <a href="https://www.pdx.edu/oit/dept-it-support">Areas Of Support</a><br>
+
+
+       </div>
+
+
+   </div>
+   
 
 </body>
 </html>
