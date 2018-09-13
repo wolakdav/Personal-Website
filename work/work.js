@@ -12,12 +12,28 @@ function button(name){
     if(name != null)
     {
         var div = name +"Tab"
-        var style = "active";
-        console.log(document.getElementById(div));
-        document.getElementById(div).style.display = style;
+        console.log(document.getElementById(div).style);
+        document.getElementById(div).style.display = " block";
     }
 
 
 }
 
+
+function copy(id)
+{
+
+    switch (id){
+        case "java":
+            var toCopy = document.getElementById("javaLink");
+            toCopy[0].select();
+            document.execCommand("copy");
+            break;
+        case "https://inb.banner.pdx.edu/forms/frmservlet?config=oprds":
+            document.execCommand("https://inb.banner.pdx.edu/forms/frmservlet?config=oprds");
+            break;
+        default:
+    }
+
+}
 

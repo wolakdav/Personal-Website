@@ -5,7 +5,9 @@
     border-radius: 10px 10px 10px 10px;
 }
 
-
+a {
+    line-height: 1.8;
+}
 
 .content{
     width: 70%;
