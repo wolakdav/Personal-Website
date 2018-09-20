@@ -33,18 +33,19 @@
        </ul>
    </div>
 
-   <div class="content">
+   <div id="landingTab">
        <div class="tab">
-        <h1 id="contentTitle">
-            Content Title
+        <h1>
+          Davids Work Quick Links
         </h1>
+        <br>
+        <a style="font-size:20px">Press any one of the buttons on the right side to find useful links for work</a>
+
         
 
-        <a id ="contentLinks">
-            Quicklinks go here
-        </a>
+     
     </div>
-       <div id="confluenceTab" class="confluence tab">
+       <div id="confluenceTab" class="confluence tab" style="display:none">
             <h1>Confluence</h1>
 
             <a href="https://portlandstate.atlassian.net/wiki/spaces/USSKB/overview">Search</a> <br>
@@ -57,15 +58,57 @@
             <a href="https://www.pdx.edu/oit/dept-it-support">Areas Of Support</a><br>
        </div>
 
-       <div id="bannerTab" class="banner tab">
+       <div id="bannerTab" class="banner tab" style="display:none">
            <h1>Banner</h1>
-        <div id="javaLink" style="display:none">https://inb.banner.pdx.edu/forms/frmservlet?config=oprd</div>
+           <textarea  id="javaLink" class="hide" style="display:block"> https://inb.banner.pdx.edu/forms/frmservlet?config=oprd </textarea>
+           <textarea  id="browserLink" class="hide" style="display:block"> https://inb.banner.pdx.edu/forms/frmservlet?config=oprds </textarea>
 
-        <div>Banner In Java Window</a>
+            <a>Banner In Java Window</a>
             <button id="javaWindow" onclick="copy('java')">Copy</button>
-        <h2 href ="https://inb.banner.pdx.edu/forms/frmservlet?config=oprds" onclick="copy(this.id)">Banner In Browser Window</a>
+            
+            <br>
 
+            <a>Banner In Browser Window</a>
+            <button id="browserWindow" onclick="copy('browser')">Copy</button>
        </div>
+
+       <div id="banwebTab" class="banweb tab" style="display:none">
+           <h1>Banweb</h1>
+           <a href="https://banweb.pdx.edu/">Banweb Link</a>
+       </div>
+     
+       <div id="d2lTab" class="d2l tab" style="display:none"> 
+           <h1>D2L</h1>
+           <a href="https://d2l.pdx.edu/">D2L Main Page </a>
+       </div>
+
+       <div id="qtTab" class="qt tab" style="display:none">
+           <h1>Quick Ticket</h1>
+           <a href="qt.oit.pdx.edu/#/tickets/new">Quick Ticket</a>
+       </div>
+
+       <div id="benchTab" class="bench tab" style="display:none">
+            <h1>DST Bench</h1>
+            <a href="https://oit.services.pdx.edu/workbench/">Current Bench</a>
+       </div>
+
+       <div id="rtTab" class="rt tab" style="display:none">
+           <h1>Tickets</h1>
+           <a href="https://support.oit.pdx.edu/">RT Home</a>
+           <br>
+           <a href="https://support.oit.pdx.edu/Dashboards/24580/Queue%20Curation"> Queue Curation</a>
+           <br>
+           <a href="https://support.oit.pdx.edu/Dashboards/15197/uss-helpdesk-workflow"> Helpdesk Queue</a>
+       </div>
+
+       <div id="calenderTab" class="calender tab" style="display:none">
+           <h1>Calender</h1>
+           <a href="https://calendar.google.com/calendar/r">Personal Calender</a>
+           <br>
+           <a href="http://cal.pdx.edu">Appointment Calenderd</a>
+       </div>
+
+   </div>
 
    </div>
    

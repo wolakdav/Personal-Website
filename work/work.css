@@ -5,13 +5,29 @@
     border-radius: 10px 10px 10px 10px;
 }
 
+.hide{
+    position: absolute;
+    margin-left: -9999px;
+}
+
 a {
     line-height: 1.8;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+button{
+    background-color: #0099cc;
+}
+
+a:hover{
+    color: #6495ed;
+    font-size: 18px;
 }
 
 .content{
     width: 70%;
-
+    
 }
 
 .menu{
